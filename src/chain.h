@@ -233,8 +233,7 @@ public:
         nTime = block.nTime;
         nBits = block.nBits;
         nNonce = block.nNonce;
-        if(block.nVersion > 3)
-            nAccumulatorCheckpoint = block.nAccumulatorCheckpoint;
+       
 
         //Proof of Stake
         bnChainTrust = uint256();
@@ -286,7 +285,6 @@ public:
         block.nTime = nTime;
         block.nBits = nBits;
         block.nNonce = nNonce;
-        block.nAccumulatorCheckpoint = nAccumulatorCheckpoint;
         return block;
     }
 
