@@ -87,6 +87,10 @@ AC_PATH_TOOL(OBJCOPY, objcopy)
 
 AC_ARG_VAR(PYTHONPATH, Augments the default search path for python module files)
 
+m4_include([pkg.m4])
+dnl pkg-config check.
+PKG_PROG_PKG_CONFIG
+
 # Enable wallet
 AC_ARG_ENABLE([wallet],
   [AS_HELP_STRING([--enable-wallet],
